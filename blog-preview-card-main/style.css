@@ -1,0 +1,144 @@
+:root {
+    --clr-main: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray-500: hsl(0, 0%, 42%);
+    --clr-gray-950: hsl(0, 0%, 7%);
+
+    --ff-figtree: "Figtree", serif;
+
+    --fw-normal: 500;
+    --fw-bold: 800;
+
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+/* reset CSS */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3 {
+    line-height: 1;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+/* reset CSS end */
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: var(--ff-figtree);
+    font-size: 16px;
+    background-color: var(--clr-main);
+    color: var(--clr-gray-950);
+}
+
+.container {
+    display: grid;
+    gap: 24px;
+    max-width: 350px;
+    margin: 24px;
+    padding: 24px;
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-gray-950);
+    border-radius: 15px;
+    
+}
+
+.content {
+    display: grid;
+    gap: 12px
+}
+
+#label {
+    background-color: var(--clr-main);
+    font-weight: var(--fw-bold);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    width: 72px;
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+}
+
+#date {
+    font-size: 14px;
+    font-weight: var(--fw-normal);
+}
+
+
+h1 {
+    font-size: 24px;
+    font-weight: var(--fw-bold);
+}
+
+#text {
+    color: var(--clr-gray-500);
+    font-size: 14px;
+}
+
+.author {
+    display: flex;
+    gap: 12px;
+}
+
+.author img {
+    width: 32px;
+}
+
+.author p {
+    /* border: 1px solid black; */
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-weight: var(--fw-bold);
+}
