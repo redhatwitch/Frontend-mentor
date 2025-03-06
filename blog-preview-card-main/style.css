@@ -9,6 +9,10 @@
     --fw-normal: 500;
     --fw-bold: 800;
 
+    --fs-main: 16px;
+    --fs-medium: 14px;
+    --fs-title: 24px;
+
 }
 
 @font-face {
@@ -74,7 +78,7 @@ body {
     place-items: center;
     min-height: 100vh;
     font-family: var(--ff-figtree);
-    font-size: 16px;
+    font-size: var(--fs-main);
     background-color: var(--clr-main);
     color: var(--clr-gray-950);
 }
@@ -88,21 +92,23 @@ body {
     background-color: var(--clr-white);
     border: 1px solid var(--clr-gray-950);
     border-radius: 15px;
-    
+    box-shadow: 10px 10px;
+    cursor: pointer;
 }
 
 .content {
     display: grid;
     gap: 12px
+    
 }
 
 #label {
     background-color: var(--clr-main);
     font-weight: var(--fw-bold);
-    padding: 8px;
+    padding: 4px;
     border-radius: 5px;
-    font-size: 13px;
-    width: 72px;
+    font-size: var(--fs-medium);
+    width: 75px;
     text-align: center;
 }
 
@@ -111,19 +117,19 @@ img {
 }
 
 #date {
-    font-size: 14px;
+    font-size: var(--fs-medium);
     font-weight: var(--fw-normal);
 }
 
 
 h1 {
-    font-size: 24px;
+    font-size: var(--fs-title);
     font-weight: var(--fw-bold);
 }
 
 #text {
     color: var(--clr-gray-500);
-    font-size: 14px;
+    font-size: var(--fs-medium);
 }
 
 .author {
@@ -139,6 +145,11 @@ h1 {
     /* border: 1px solid black; */
     display: flex;
     text-align: center;
-    font-size: 16px;
+    font-size: var(--fs-main);
+    line-height: 32px;
     font-weight: var(--fw-bold);
+}
+
+.content:hover > h1 {
+  color: var(--clr-main);
 }
