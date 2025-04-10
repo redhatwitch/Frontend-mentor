@@ -67,4 +67,48 @@
 
 body {
     font-family: var(--ff-body-open-sans);
+    background-color: var(--clr-background);
+    background-image: url(images/bg-desktop.svg);
+    background-size: auto;
+    min-height: 100vh;
+}
+
+header {
+  padding: 50px;
+}
+
+#logo {
+  width: 200px;
+}
+
+.container {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.socmed {
+  padding: 50px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.btn {
+  color: #999;
+  line-height: 1;
+  background: white;
+  padding: .8rem 4rem;
+  border: 0;
+  border-radius: 100vw;
+  cursor: pointer;
+  box-shadow: 1px 3px 3px rgb(73, 73, 73);
+}
+
+i {
+  /* width: 30px;
+  height: 30px; */
+  /* border: 1px solid white; */
+  /* border-radius: 50%;
+  padding: 15px 5px; */
 }
